@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/provide-one/pom.xml" />
         <option value="$PROJECT_DIR$/consumer-ribbon/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul-project/pom.xml" />
       </list>
     </option>
   </component>
