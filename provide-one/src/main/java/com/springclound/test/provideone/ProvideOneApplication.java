@@ -17,7 +17,6 @@ public class ProvideOneApplication {
         SpringApplication.run(ProvideOneApplication.class, args);
     }
 
-
     @Value("${server.port}")
     String port;
 
