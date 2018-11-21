@@ -1,0 +1,11 @@
+server:
+  port: 8802
+
+spring:
+  application:
+    name: provide-two
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8800/eureka/
