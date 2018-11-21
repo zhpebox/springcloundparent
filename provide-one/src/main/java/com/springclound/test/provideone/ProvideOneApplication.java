@@ -22,7 +22,7 @@ public class ProvideOneApplication {
 
     @GetMapping(value="/getPortRest")
     public String getPortRest(@RequestParam(value="name")String name){
-        return " this port is = "+port +" name="+name;
-    }
+    return " this port is = "+port +" name="+name;
+}
 
 }
