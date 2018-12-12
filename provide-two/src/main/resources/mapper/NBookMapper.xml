@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.springcloud.test.providetwo.dao.NBookDao" >
+
+    <insert id="insertNBook" parameterType="nbookEntity">
+        insert into nbook(nid,nbook_name,nbook_auther,nbook_num)
+          values (#{nid},#{nbookName},#{nbookAuther},#{nbookNum})
+    </insert>
+
+    <select id="selectNBook" parameterType="nbookEntity" resultType="nbookEntity">
+        select nid,nbook_name as nbookName, nbook_auther as nbookAuther, nbook_num as nbookNum from nbook
+        where 1=1
+        <if test="nbookName != null and nbookName != ''">
+            and nbook_name like ConCat('%', concat(#{nbookName},'%'))
+        </if>
+        <if test="nbookAuther != null and bookAuther != ''">
+            and nbook_auther like concat('%',concat(#{nbookAuther},'%'))s
+        </if>
+
+    </select>
+
+
+</mapper>

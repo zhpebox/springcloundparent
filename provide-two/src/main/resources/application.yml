@@ -4,8 +4,28 @@ server:
 spring:
   application:
     name: provide-two
+  datasource:
+    url: jdbc:mysql://localhost:3306/providedb?useSSL=false&serverTimezone=Hongkong&characterEncoding=utf-8&autoReconnect=true
+    username: root
+    password: 123456
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8800/eureka/
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.springcloud.test.providetwo.entity
+
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+
+
+
+
+
+

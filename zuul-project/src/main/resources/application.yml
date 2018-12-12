@@ -9,8 +9,8 @@ spring:
     name: service-zuul
 zuul:
   routes:
-    api-a:
-      path: /api-a/**
+    axpi-ax:
+      path: /apia-aa/**
       serviceId: consumer-feign
     api-b:
       path: /api-b/**
